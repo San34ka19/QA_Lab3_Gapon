@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo App (Категории + Статусы)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todo-app">
+    <h1>📝 Умный ToDo-лист</h1>
+    
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Название задачи...">
+      <select id="categorySelect">
+        <option value="home">🏠 Дом</option>
+        <option value="work">💼 Работа</option>
+        <option value="study">📚 Учёба</option>
+      </select>
+      <select id="statusSelect">
+        <option value="not-started">🔴 Не начато</option>
+        <option value="in-progress">🟡 В процессе</option>
+        <option value="completed">🟢 Готово</option>
+      </select>
+      <button id="addBtn">➕ Добавить</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">Все</button>
+      <button class="filter-btn" data-category="home">🏠 Дом</button>
+      <button class="filter-btn" data-category="work">💼 Работа</button>
+      <button class="filter-btn" data-category="study">📚 Учёба</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="stats">
+      Всего задач: <span id="totalTasks">0</span> | 
+      Готово: <span id="completedTasks">0</span>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

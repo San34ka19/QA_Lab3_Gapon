@@ -1,0 +1,16 @@
+{
+  "name": "qa_lab3_gapon",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jsdoc": "^4.0.4",
+    "jsdoc-mermaid": "^1.0.0"
+  }
+}
